@@ -24,6 +24,7 @@ jobs:
         run: | 
           ls /filipe/app
           ip add
+          node /filipe/app/server.js &
         
       - name: GETs 
         shell: sh
