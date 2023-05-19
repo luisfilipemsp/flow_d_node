@@ -7,6 +7,6 @@ RUN cd /filipe && npm install
 
 EXPOSE 3000
 
-RUN ls /filipe/app
+RUN ls /filipe && ls /filipe/app
 
 CMD ["node", "/app/server.js"]
