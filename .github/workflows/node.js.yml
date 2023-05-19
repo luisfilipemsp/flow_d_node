@@ -22,5 +22,4 @@ jobs:
         shell: bash
         run: | 
           apk add curl
-          apk add bash
-          /usr/bin/curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
+          curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
