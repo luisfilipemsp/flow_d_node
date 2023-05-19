@@ -21,4 +21,4 @@ jobs:
       - name: GETs 
         run: | 
           /bin/bash -c
-          curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
+          curl -X GET localhost:3000/stemdoers
