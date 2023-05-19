@@ -22,7 +22,7 @@ jobs:
         shell: sh
         run: | 
           ls /app
-          ps aux | grep node
+          ip add 
         
       - name: GETs 
         shell: sh
