@@ -14,7 +14,7 @@ jobs:
    
     runs-on: ubuntu-20.04
     container:
-      image: lfmsp/node_d_stem_final:v1.2
+      image: lfmsp/node_d_stem_final:v1.1
       env:
         NODE_ENV: development
       options: --cpus 1
