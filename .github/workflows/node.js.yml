@@ -19,7 +19,7 @@ jobs:
       options: --cpus 1
     steps:
       - name: GETs 
-        shell: bash
+        shell: sh
         run: | 
           apk add curl
           curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
