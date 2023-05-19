@@ -19,4 +19,6 @@ jobs:
       options: --cpus 1
     steps:
       - name: GETs 
-        run: curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
+        run: | 
+          /bin/bash -c
+          curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
