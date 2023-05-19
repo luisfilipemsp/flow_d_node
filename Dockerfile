@@ -9,4 +9,4 @@ EXPOSE 3000
 
 RUN ls /filipe && ls /filipe/app
 
-CMD ["node", "/app/server.js"]
+CMD ["node", "/filipe/app/server.js"]
