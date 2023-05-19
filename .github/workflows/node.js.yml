@@ -14,7 +14,7 @@ jobs:
    
     runs-on: ubuntu-20.04
     container:
-      image: lfmsp/node_d_stem_final:v1.1
+      image: lfmsp/node_d_stem_final:v1.2
       env:
         NODE_ENV: development
       options: --cpus 1
@@ -22,6 +22,7 @@ jobs:
       - name: Checking server.js file
         shell: sh
         run: | 
+          ls /filipe
           ls /filipe/app
           ip add
           node /filipe/app/server.js &
