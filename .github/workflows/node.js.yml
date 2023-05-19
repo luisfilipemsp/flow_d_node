@@ -20,11 +20,10 @@ jobs:
       options: --cpus 1
     steps:
       - name: Checking server.js file
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-        shell: sh
-        run: | 
+      - run: | 
           ls /filipe/app
           ip add
           node /filipe/app/server.js
