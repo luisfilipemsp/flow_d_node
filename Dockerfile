@@ -5,6 +5,6 @@ RUN npm install
 
 EXPOSE 3000
 
-RUN ls 
+RUN ls /app
 
-CMD ["node", "./server.js"]
+CMD ["node", "/app/server.js"]
