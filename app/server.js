@@ -5,7 +5,7 @@ const app = exp();
 const funcs = require(__dirname + "/js/funciones.js");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
-const express_port = process.env.SERVER_PORT;
+const express_port = 3000;
 
 app.listen(express_port, () => {
   console.log(
