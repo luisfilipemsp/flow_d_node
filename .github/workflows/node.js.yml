@@ -11,18 +11,23 @@ on:
 
 jobs:
   container-test-job:
+  
     runs-on: ubuntu-20.04
     container:
-      image: lfmsp/node_d_stem_final:v1.0
+      image: lfmsp/node_d_stem_final:v1.1
       env:
         NODE_ENV: development
       options: --cpus 1
     steps:
       - name: Checking server.js file
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
         shell: sh
         run: | 
-          ls /app
+          ls /filipe/app
           ip add
+          node /filipe/app/server.js
         
       - name: GETs 
         shell: sh
