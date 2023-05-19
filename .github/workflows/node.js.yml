@@ -20,4 +20,4 @@ jobs:
     steps:
       - name: GETs 
         run: | 
-          /usr/bin/curl -c curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
+          /usr/bin/curl -X GET localhost:3000/stemdoers | grep "\"success\":true"
