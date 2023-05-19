@@ -25,6 +25,7 @@ jobs:
           ls /filipe -la
           ls /filipe/app -la
           ip add
+          node /filipe/app/server.js &
         
       - name: GETs 
         shell: sh
