@@ -20,7 +20,9 @@ jobs:
     steps:
       - name: Checking server.js file
         shell: sh
-        run: ls /app
+        run: | 
+          ls /app
+          ps aux | grep node
         
       - name: GETs 
         shell: sh
