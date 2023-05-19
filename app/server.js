@@ -1,10 +1,10 @@
+require("dotenv").config();
 const exp = require("express");
 const fs = require("fs");
 const app = exp();
 const funcs = require(__dirname + "/js/funciones.js");
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
-require("dotenv").config();
 const express_port = process.env.SERVER_PORT;
 
 app.listen(express_port, () => {
