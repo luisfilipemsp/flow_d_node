@@ -20,8 +20,8 @@ jobs:
       options: --cpus 1
     steps:
       - name: Checking server.js file
-        uses: actions/checkout@v1
-      - run: | 
+        shell: sh
+        run: | 
           ls /filipe/app
           ip add
           node /filipe/app/server.js
