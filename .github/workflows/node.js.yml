@@ -18,6 +18,10 @@ jobs:
         NODE_ENV: development
       options: --cpus 1
     steps:
+      - name: Checking server.js file
+        shell: sh
+        run: ls /app
+        
       - name: GETs 
         shell: sh
         run: | 
