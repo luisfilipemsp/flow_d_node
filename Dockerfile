@@ -1,10 +1,12 @@
 FROM node:20-alpine3.16
-COPY . .
 
-RUN npm install
+WORKDIR filipe
+COPY . /filipe
+
+RUN cd /filipe && npm install
 
 EXPOSE 3000
 
-RUN ls /app
+RUN ls /filipe/app
 
 CMD ["node", "/app/server.js"]
