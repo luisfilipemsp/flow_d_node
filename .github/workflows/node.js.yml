@@ -22,7 +22,7 @@ jobs:
         shell: sh
         run: | 
           ls /app
-          ip add 
+          echo $localhost
         
       - name: GETs 
         shell: sh
