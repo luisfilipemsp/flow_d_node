@@ -28,4 +28,4 @@ jobs:
         shell: sh
         run: | 
           apk add curl
-          curl -X GET http://127.0.0.1:3000/stemdoers | grep "\"success\":true"
+          curl -X GET 172.18.0.2:3000/stemdoers | grep "\"success\":true"
